@@ -14,14 +14,14 @@ body {
   max-width: 1350px;
   margin: 0 auto;
   background: var(--maindark);
+  height: 14vh;
 }
-.navbar-toggler{
+.navbar-toggler {
   border: none !important;
   outline: none !important;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: none;
- 
 }
 .logo {
   width: 70px;
@@ -55,10 +55,14 @@ body {
   padding: 6px;
   margin-right: 3px;
 }
+.main_header_info{
+  min-height: calc(100vh - 14vh);
+}
 
 .main_header {
   max-width: 1350px;
   margin: 0 auto;
+
 }
 .main_header_title {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
