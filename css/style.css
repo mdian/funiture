@@ -14,7 +14,6 @@ body {
   max-width: 1350px;
   margin: 0 auto;
   background: var(--maindark);
-  height: 14vh;
 }
 .navbar-toggler {
   border: none !important;
@@ -55,14 +54,17 @@ body {
   padding: 6px;
   margin-right: 3px;
 }
-.main_header_info{
+.main_header_info {
   min-height: calc(100vh - 14vh);
 }
-
+@media screen and (max-width: 767px) {
+  .main_header_info {
+    min-height:75vh
+  }
+}
 .main_header {
   max-width: 1350px;
   margin: 0 auto;
-
 }
 .main_header_title {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -73,6 +75,11 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .main_header_pic {
+    height: 70vh;
+  }
 }
 
 .rent_price {
