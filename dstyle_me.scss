@@ -1,0 +1,32 @@
+$main-color : red;
+$textColor:green;
+$mainSize:16px;
+$mainWidth:100%;
+
+
+
+div{
+    @extend %transition;
+    background-color: $main-color !important; 
+    color: $textColor;
+    font-size: $mainSize;
+    width: $mainWidth;
+    transition: all 10s;
+    .num{
+        font-size: $mainSize +20;
+        background-color: #333 !important;
+        width:$mainWidth/2
+        
+    }
+    &:hover{
+        background:orange !important;
+    }
+}
+
+
+
+// classes to extend
+%transition{
+    transition: all .3s;
+}
+
