@@ -1,6 +1,6 @@
 :root {
   --maindark: #242325;
-  --maingreen: #61e768;
+  --maingreen: #09c712;
   --mainwhite: #fff;
   --maingrey: rgb(238, 236, 236);
 }
@@ -33,12 +33,16 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  height: 3000px;
+  height: 4000px;
+}
+.header_page_top {
+  background: var(--maindark);
 }
 
 .navbar {
   max-width: 1350px;
-  margin: 0 auto;
+
+  margin: 0 auto !important;
   background: var(--maindark);
 }
 .navbar-toggler {
@@ -154,21 +158,17 @@ body {
 .carousel-control-prev-icon {
   padding: 0.9rem;
   width: 0px;
-  height: 47px;
-  
+  height: 40px;
 }
-.carousel-control-next{
+.carousel-control-next {
   right: 0%;
   bottom: 0px;
   width: 10% !important;
-
- 
 }
-.carousel-control-prev{
-  left: 79%;
+.carousel-control-prev {
+  left: 80%;
   bottom: 0px;
   width: 10% !important;
- 
 }
 
 .blockquote-text {
@@ -191,3 +191,135 @@ body {
   background-color: rgb(110, 102, 102) !important;
 }
 /* end about style */
+/* contact */
+@media screen and (max-width: 992px) {
+  .contact-title {
+    font-size: 1.3rem;
+  }
+}
+/* end contact */
+
+/* services */
+.services,
+.tour {
+  color: #eee;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.86),
+      rgba(0, 0, 0, 0.86)
+    ),
+    url(../images/images.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 40vh;
+}
+.main_pic {
+  top: -150px;
+}
+
+.img_service {
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .main_pic {
+    top: 0;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .img_service {
+    height: 380px;
+  }
+}
+.box_service_subtext {
+  color: rgb(143, 141, 141);
+  font-size: 0.8rem;
+  margin: 1px 0 !important;
+}
+.main-img-btn {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* end services
+
+/* gallery */
+/* .img_gallery_right {
+  height: 200px;
+}
+.img_gallery_right img {
+  height: 100%;
+}
+.image_gallery_left {
+  height: 430px;
+}
+.image_gallery_left img {
+  height: 100%;
+} */
+
+.gallery_box {
+  position: relative;
+}
+/* .gallery_overlay::after{
+  content: "";
+  position: relative;
+
+} */
+.box_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.gallery_box:hover .box_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.box_overlay .read_more {
+  transform: translateY(100px);
+  transition: 0.4s;
+}
+.gallery_box:hover .read_more {
+  transform: translateY(0);
+}
+.image_gallery_left .box_overlay a {
+  position: relative;
+  top: -18px;
+}
+.img_gallery_right .box_overlay a {
+  position: relative;
+  top: -10px;
+}
+/* End gallery */
+
+/* tour */
+.tour_icon_container {
+  border-radius: 25%;
+  transition: all 0.4s;
+  cursor: pointer;
+  color: #09c712;
+  background: #fff;
+}
+.tour_icon_container:hover {
+  background-color: #09c712;
+}
+.tour_icon_container:hover .tour_icon {
+  color: #eee;
+}
+
+.close_toure_icon {
+  font-size: 2rem;
+}
+/* end tour */
+
+/* setting when modal is being opined */
+.modal-open {
+  overflow: scroll;
+}
