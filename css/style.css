@@ -319,6 +319,23 @@ body {
 }
 /* end tour */
 
+/* footer */
+.footer_logo{
+  width: 70px;
+  height: 70px;
+}
+.footer_logo_img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* nearby section */
+.content_info_nearby{
+  font-weight: 700;
+}
+/* end nearby section */
+
 /* setting when modal is being opined */
 .modal-open {
   overflow: scroll;
